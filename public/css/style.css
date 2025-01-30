@@ -1,0 +1,80 @@
+body {
+  --primary-lighter: #BFE1FF;
+  --primary-light: #6695BE;
+  --primary-main: #3F688C;
+  --primary-dark: #194062;
+  --primary-darker: #172B3D;
+
+  --secondary-lighter: #F19792;
+  --secondary-light: #BF6762;
+  --secondary-main: #8C433F;
+  --secondary-dark: #4A1310;
+  --secondary-darker: #320502;
+
+  --gray-100: #F2F8FD;
+  --gray-200: #D3DCE3;
+  --gray-300: #B8C1C9;
+  --gray-400: #8D9AA5;
+  --gray-500: #6B7883;
+  --gray-600: #3F4D59;
+  --gray-700: #253543;
+  --gray-800: #1C2C39;
+  --gray-900: #031220;
+
+  --text-dark-primary: #031220;
+  --text-dark-secondary: #3f4d59;
+  --text-dark-disabled: #8d9aa5;
+
+  --text-light-primary: #F2F8FD;
+  --text-light-secondary: #8D9AA5;
+  --text-light-disabled: #253543;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.style-table-striped tbody tr:nht-child(even) {
+  background-color: rgba(63, 77, 89, 0.08);
+}
+
+.style-table-striped tbody tr:nht-child(odd) {
+  background-color: #fff;
+}
+
+.row-odd {
+  background-color: rgba(63, 77, 89, 0.08) !important;
+}
+
+.row-even {
+  background-color: #fff !important;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+td, th {
+border: none;
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 10px; /* Bordas arredondadas no canto superior esquerdo */
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 10px; /* Bordas arredondadas no canto superior direito */
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px; /* Bordas arredondadas no canto inferior esquerdo */
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px; /* Bordas arredondadas no canto inferior direito */
+}
+
+thead {
+  background-color: var(--gray-200);
+}
